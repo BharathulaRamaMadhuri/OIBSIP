@@ -54,8 +54,13 @@ A command-line Python program that calculates Body Mass Index (BMI) from weight 
 
 ## Screenshots
 
-Screenshots of the program running are included in this folder.
-The full output of all test cases is available in `bmi_test_output.txt`.
+Screenshots of the program running are in the `bmi_test_output` folder.
+
+### Normal input
+![Normal output](bmi_test_output/screenshot1.png)
+
+### Invalid input (error handling)
+![Error output](bmi_test_output/screenshot2.png)
 
 ## Author
 
