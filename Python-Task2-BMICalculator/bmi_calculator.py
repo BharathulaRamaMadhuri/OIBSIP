@@ -1,9 +1,4 @@
-# BMI Calculator - Beginner Tier
-# Calculates BMI from weight (kg) and height (m) and shows the health category.
-
-
 def get_positive_number(prompt):
-    """Keep asking until the user enters a valid positive number."""
     while True:
         value = input(prompt).strip()
         try:
@@ -48,9 +43,13 @@ def main():
         print(f"Category : {category}\n")
 
         again = input("Calculate again? (y/n): ").strip().lower()
-        if again != "y":
-            print("Exiting BMI Calculator.")
-            break
         
+        if again == "y":
+            break
+        elif again == "n":
+            print("Exiting BMI Calculator.")
+            return
+        else:
+            print("Error: Please enter only y or n.")
 if __name__ == "__main__":
     main()
