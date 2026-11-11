@@ -43,13 +43,9 @@ def main():
         print(f"Category : {category}\n")
 
         again = input("Calculate again? (y/n): ").strip().lower()
-        
-        if again == "y":
-            break
-        elif again == "n":
+        if again != "y":
             print("Exiting BMI Calculator.")
-            return
-        else:
-            print("Error: Please enter only y or n.")
+            break
+        
 if __name__ == "__main__":
     main()
